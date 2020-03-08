@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css'
-import Welcome from './Welcome';
-import Greet,{GreetWithoutProps} from './main-concept/functional-component/Greet'
+// import IntroJSX from './Welcome';
+// import Greet,{GreetWithoutProps} from './main-concept/component/functional-component/functional-component/Greet';
+import Welcome from './main-concept/component/class-component/Welcome';
 class App extends React.Component {
   render() {
     return (
-      <div className="Welcome">
-        {/* <Welcome name='Vaibhav' />; */}
-        <GreetWithoutProps/>
-        <Greet name="Vaibhav" className="greet"/>
+      <div className="App">
+        {/* <GreetWithoutProps/>
+        <Greet name="Vaibhav" className="greet"/> */}
+        <Welcome name='Vaibhav'/>
       </div>
     )
   }
