@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../../logo.svg';
 import './Welcome.css';
-import { welcomeGreating, welcomeImg } from './main-concept/intro-jsx/IntroToJsx'
+import { welcomeGreating, welcomeImg } from './IntroToJsx'
 
 const element = (props) => welcomeGreating(props);
 
