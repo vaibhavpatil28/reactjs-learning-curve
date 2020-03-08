@@ -3,7 +3,9 @@ import './App.css'
 // import Hello from './main-concept/intro-jsx/hello';
 // import Greet, { GreetWithoutProps } from './main-concept/component/functional-component/functional-component/Greet';
 // import Welcome from './main-concept/component/class-component/Welcome';
-import Counter from './components/counter';
+// import Counter from './components/counter';
+import DestructureGreet, {DestructureGreetAfter} from './components/destructure-props-and-state/destructure-greet';
+import DestructureWelcome from './components/destructure-props-and-state/destructure-welcome';
 
 class App extends React.Component {
   render() {
@@ -18,8 +20,12 @@ class App extends React.Component {
           <p>Hey it's children of Welcome component...</p>
         </Welcome>
         <Greet name="Vaibhav" className="greet" />
-        <Welcome name='Vaibhav' /> */}
-        <Counter />
+        <Welcome name='Vaibhav' />
+        <Counter /> */}
+        <DestructureGreetAfter name="Diana" heroName="Wonder Woman"/>
+        <DestructureGreet name="Robert" heroName="Iron Man"/>
+        
+        <DestructureWelcome name="Bruce" heroName="Batman" />
       </div>
     )
   }
